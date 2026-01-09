@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/transition.css" />
+  </head>
+  <body>
+    <header>
+      <h2>2 - Transitions</h2>
+    </header>
+    <main>
+      <!-- Voi già sapete che utilizzando lo pseudo-selettore ":hover" voi
+       potete alterare il CSS applicato ad un elemento nel momento in cui ci
+       finisce sopra il cursore del mouse
+        -->
+      <article class="prova"></article>
+      <!-- tramite le TRANSITIONS voi potete assumere maggiore
+         controllo su questo "cambio di stato"; potete decidere
+         la durata della transizione (cioè quanto tempo le nuove
+         regole css dell'hover impiegheranno a venire applicate),
+         con quanto (eventuale) delay e perfino la curva di
+         accelerazione -->
+      <section>
+        <h3>Box che si ALLUNGA all'hover</h3>
+        <article class="long">
+          <p>MI ALLUNGO</p>
+        </article>
+        <h3>Box che CAMBIA COLORE all'hover</h3>
+        <article class="color">
+          <p>CAMBIO COLORE</p>
+        </article>
+        <h3>Box che SI SPOSTA all'hover</h3>
+        <article class="move">
+          <p>MI SPOSTO</p>
+        </article>
+        <h3>Box che CAMBIA GRADIENTE all'hover</h3>
+        <article class="gradient">
+          <p>GRADIENTE</p>
+        </article>
+        <h3>Box che SI SPOSTA E RUOTA all'hover</h3>
+        <article class="crazy">
+          <p>SPOSTO+RUOTO</p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

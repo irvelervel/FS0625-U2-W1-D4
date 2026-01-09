@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(181, 181, 181);
+}
+
+main article {
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  /* flexbox */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article.prova {
+  background-color: orange;
+}
+
+article.prova:hover {
+  /* questi sono gli stili che
+    verranno applicati una volta
+    che il cursore del mouse ci
+    passa sopra */
+  background-color: cyan;
+}
+
+.long {
+  background-color: darkcyan;
+  color: white;
+
+  /* TRANSITION */
+  /* transition: nome-proprietà durata curva-accelerazione ritardo */
+  transition: width 3500ms linear 0s;
+}
+
+.long:hover {
+  width: 500px;
+}
+
+.color {
+  background-color: purple;
+  transition: background-color 5s linear 2s;
+}
+
+.color:hover {
+  background-color: lime;
+}
+
+.move {
+  background-color: firebrick;
+  transition: transform 5s linear 0s;
+}
+
+.move:hover {
+  transform: translateX(500px);
+}
+
+.gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(42, 123, 155, 1) 0%,
+    rgba(87, 199, 133, 1) 50%,
+    rgba(237, 221, 83, 1) 100%
+  );
+
+  transition: background 5s linear 0s;
+  /* spoiler: non funziona :( */
+}
+
+.gradient:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(217, 52, 52, 1) 0%,
+    rgba(199, 193, 87, 1) 51%,
+    rgba(237, 221, 83, 1) 100%
+  );
+}
+
+.crazy {
+  background-color: cornflowerblue;
+  /* transizioni separate per proprietà */
+  transition: transform 5s linear 0s, background-color 2s linear 0s;
+  /* transizione UNICA per tutte le proprietà */
+  /* transition: all 5s linear 0s */
+}
+
+.crazy:hover {
+  transform: translateX(500px) rotate(8turn);
+  background-color: red;
+}
